@@ -1,3 +1,16 @@
-<!-- your html code here -->
-<!-- Also called a hero image or a jumbotron before bootstrap 5. This might be helpful: https://getbootstrap.com/docs/5.1/examples/jumbotron/ -->
-<p>Hello, I'm the tagline and I was loaded using ajax from templates/tagline.html</p>
+<!-- Tried my best to avoid using custom CSS, and I didn't wanted to modify the common style.css so... here's a style tag -->
+<style>
+    .tl-mimg-hd-container { top:25%; width:100%; }
+    .tl-mimg-hd { background: rgba(255,255,255,0.7); line-height: .93em; }
+    .tl-mimg-hd-sm { font-size:8em; }
+    .tl-mimg-hd-lg { font-size:14em; }
+</style>
+<div id="tagline" class="position-relative m-0 p-0 w-100">
+    <img class="p-0 m-0" width="100%" src="./assets/img/bg.jpg" alt="Murcia"/>
+    <div class="position-absolute tl-mimg-hd-container">
+        <p class="text-center mx-4 fw-bold tl-mimg-hd tl-mimg-hd-lg">Acho Mira Murcia</p>
+        <p class="text-center mt-5 mx-4 fw-semibold tl-mimg-hd tl-mimg-hd-sm">Lo Bonica k'a Quedao</p>
+    </div>
+    <div class="position-absolute" style="top:25%; width:100%">
+    </div>
+</div>
