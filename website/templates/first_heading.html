@@ -1,14 +1,23 @@
 <style>
-    .fh-section { margin: 64px 0}
-    .fh-h2 { font-size: 4em; }
+    .fh-h2 { font-size: 4.5em; }
+    .fh-3r { font-size: 3em; }
     .fh-content { padding-top: 64px; padding-bottom: 64px;}
+    @media screen and (max-width: 1280px) {
+        .fh-h2 { font-size: 2.5vw; }
+        .fh-3r { font-size: 1.75vw; }
+        .fh-content { padding-top: 4vw 2vw;}
+    }
 </style>
 <div id="first_heading" class="container-fluid d-flex justify-content-center bg-light">
-    <div class="col-11 fh-section border-top border-bottom d-flex fh-content">
-        <div class="me-4">
-            <p class="fw-bold text-body-emphasis fh-h2">Las Primeras Farolas<span class="ms-4 text-secondary">Llegan a la Ciudad</span></p>
-            <p class="fw-medium text-body-emphasis fs-1">Acho seguro no os lo creeréis pero las buenas farolicas estan aquí, ya podremos ordeñar nuestras vacas y vaciar nuestras fosas sépticas de noche, o incluso sacar a pasear al burro con total seguridad.</p>
+    <div class="row m-5 border-top border-bottom fh-content">
+        <div class="col-9">
+            <div class="mx-4">
+                <p class="fw-bold text-body-emphasis fh-h2">Las Primeras Farolas<span class="ms-4 text-secondary">Llegan a la Ciudad</span></p>
+                <p class="fw-medium text-body-emphasis fh-3r">Acho seguro no os lo creeréis pero las buenas farolicas estan aquí, ya podremos ordeñar nuestras vacas y vaciar nuestras fosas sépticas de noche, o incluso sacar a pasear al burro con total seguridad.</p>
+            </div>
         </div>
-        <img class="rounded-circle me-0 ms-auto fh-img" src="./assets/img/1.jpg">
+        <div class="col-3">
+            <img class="rounded-circle w-100" src="./assets/img/1.jpg">
+        </div>
     </div>
 </div>
